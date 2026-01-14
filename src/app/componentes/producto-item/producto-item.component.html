@@ -1,0 +1,11 @@
+<div class="item">
+  <div>
+    <strong>{{ producto.nombre }}</strong><br>
+    Precio: {{ producto.precio }} €<br>
+    <small>{{ producto.descripcion }}</small>
+  </div>
+
+  <button class="eliminar" (click)="eliminar.emit(producto.nombre)">
+    Eliminar
+  </button>
+</div>
